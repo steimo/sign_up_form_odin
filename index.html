@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <link href="style.css" rel="stylesheet" />
+    <script src="javascript.js" async></script>
+  </head>
+  <body>
+    <div class="image">
+      <img
+        src="images/noah_negishi_unsplash.jpg"
+        alt="A portion of path in forest in Japan"
+      />
+      <div class="logo_wrapper"><img class="logo" src="images/odin-lined.png" alt="odin_logo"><h1>odin</h1></div>
+    <p class="credit">Photo by <a class="credit_link" href="">Noah Negishi</a> on <a class="credit_link" href="https://unsplash.com/">Unsplash</a></p>
+    </div>
+
+    <form action="http://">
+      <section class="inform">
+	      <p>This is not real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started. <p>You <em>know</em> you want to.</p></p>
+      </section>
+      <section class="form">
+        <h2>Let's do this!</h2>
+        <fieldset class="name">
+          <div style="float: left; margin-right: 20px">
+            <label for="first_name">first name</label>
+            <input id="first_name" type="text" name="first_name" />
+          </div>
+          <div style="float: left">
+            <label for="last_name">last name</label>
+            <input id="last_name" type="text" name="last_name" />
+          </div>
+        </fieldset>
+        <fieldset class="email">
+          <div style="float: left; margin-right: 20px">
+            <label for="email">email</label>
+            <input type="email" id="email" name="email" />
+          </div>
+          <div style="float: left">
+            <label for="phone_number">phone number</label>
+            <input type="tel" id="phone_number" name="phone_number" />
+          </div>
+        </fieldset>
+        <fieldset class="password">
+          <div style="float: left; margin-right: 20px">
+            <label for="password">password</label>
+            <input
+              id="password"
+              type="password"
+              name="password"
+              onkeyup="check();"
+            />
+          </div>
+          <div style="float: left">
+            <label for="confirm_password">confirm password</label>
+            <input
+              id="confirm_password"
+              type="password"
+              name="confirm_password"
+              onkeyup="check();"
+            /><span id="message"></span>
+          </div>
+        </fieldset>
+      </section>
+      <section class="button">
+        <button type="submit">Create Account</button>
+        <p id="have_account">Already have an account? <a href="http://">Log in</a></p>
+      </section>
+    </form>
+  </body>
+</html>
